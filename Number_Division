@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.SimpleTimeZone;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Insert the number of rows:");
+        String input = scanner.nextLine();
+        int n = Integer.parseInt(input);
+        int p = -200;
+        for (int i = 1; i<=n; i++) {
+            System.out.println("Insert number " + i);
+            String input2 = scanner.nextLine();
+            int k = Integer.parseInt(input2);
+            if (k > p) {
+                p = k;
+            }
+        }
+        System.out.println(p);
+    }
+}
